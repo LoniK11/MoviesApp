@@ -1,0 +1,7 @@
+<div class="movie" (click)="onMovieNameClick()">
+    <img [src]="movie.imageUrl[0]" alt="">
+    
+    <p class="hover">{{ movie.name }}</p>
+    <p class="ratings year-rating hover"><i class="bi bi-star-fill"></i>{{ movie.rating }}</p>
+    <p class="year year-rating hover">{{ movie.productionYear }}</p>
+</div>

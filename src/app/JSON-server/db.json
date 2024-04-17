@@ -1,0 +1,289 @@
+{
+  "users": [
+    {
+      "id": "eb52",
+      "username": "Loni_K11",
+      "email": "valonkulici11@gmail.com",
+      "password": "Valon12345"
+    },
+    {
+      "id": "2be1",
+      "username": "Ghost123",
+      "email": "ghost123@gmail.com",
+      "password": "Ghost123456"
+    },
+    {
+      "id": "46f7",
+      "username": "Valon123",
+      "email": "valonkulici11@gmail.com",
+      "password": "Abcd1234"
+    }
+  ],
+  "movies": [
+    {
+      "id": "5083",
+      "name": "Puss in Boots: The Last Wish",
+      "description": "When Puss in Boots discovers that his passion for adventure has taken its toll and he has burned through eight of his nine lives, he launches an epic journey to restore them by finding the mythical Last Wish.",
+      "imageUrl": [
+        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSX2q5n3N0MEsdRnUy44WM1sxy-R44S8dXu-mmceQyMVDbOd-9qMbKkv-arS726F685U1TI",
+        "https://images4.alphacoders.com/129/1297183.jpg"
+      ],
+      "rating": 7.8,
+      "productionYear": "2022",
+      "cast": [
+        "Antonio Banderas",
+        "Harvey Gullien",
+        "Salma Hayek"
+      ],
+      "director": "Joel Crawford",
+      "category": [
+        "action",
+        "adventure",
+        "animated"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/1o8GWhoD53I?si=3kAi21RQPO5QvsBv"
+      ],
+      "length": 102
+    },
+    {
+      "id": "4911",
+      "name": "Kung Fu Panda 4",
+      "description": "After Po is tapped to become the Spiritual Leader of the Valley of Peace, he needs to find and train a new Dragon Warrior, while a wicked sorceress plans to re-summon all the master villains whom Po has vanquished to the spirit realm.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/M/MV5BZDY0YzI0OTctYjVhYy00MTVhLWE0NTgtYTRmYTBmOTE3YTViXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg",
+        "https://assets-in.bmscdn.com/discovery-catalog/events/et00379741-ygxnnsfhfr-landscape.jpg"
+      ],
+      "rating": 6.5,
+      "productionYear": "2024",
+      "cast": [
+        "Awkwafina",
+        "Jack Black",
+        "Viola Davis"
+      ],
+      "director": "Mike Mitchell",
+      "category": [
+        "action",
+        "adventure",
+        "animated"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/_inKs4eeHiI?si=RbLijeZhTCFCTmti",
+        "https://www.youtube.com/embed/E7yQbq83Qig?si=rclcOhPp6epCylTr"
+      ],
+      "length": 94
+    },
+    {
+      "id": "9db2",
+      "name": "Transformers: Age of Extinction",
+      "description": "When humanity allies with a bounty hunter in pursuit of Optimus Prime, the Autobots turn to a mechanic and his family for help.",
+      "imageUrl": [
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_RP4vkCjcSvZcLm9zOYDG1GNFxlMywvVtDOjuR19TkrPVmD1e0iaxG79kLhvzr3PEIohU",
+        "https://www.desktopbackground.org/download/o/2015/07/07/975985_wallpapers-optimus-prime-transformers-age-of-extinction-dinobot_1920x1080_h.jpg"
+      ],
+      "rating": 5.6,
+      "productionYear": "2014",
+      "cast": [
+        "Jack Reynor",
+        "Mark Wahlberg",
+        "Nicola Peltz Beckham"
+      ],
+      "director": "Michael Bay",
+      "category": [
+        "action",
+        "adventure",
+        "fantasy"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/dYDGqmxMZFI?si=qbXZuvxNTVLg3-lj",
+        "https://www.youtube.com/embed/S30VkLn5a2o?si=8Q8hVSuniBrint1M",
+        "https://www.youtube.com/embed/T9bQCAWahLk?si=7whRHsMuK03ChKsY"
+      ],
+      "length": 165
+    },
+    {
+      "id": "0778",
+      "name": "Asphalt Burning",
+      "description": "The third and final installment in the Burnout trilogy. This time, the road leads trough Norway, to Sweden, Denmark and finally Germany to race on the famous racing track, Nürburgring.",
+      "imageUrl": [
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzoDoATqAo_zyDJ80WQdwVRHeLnuNyegOdv-WbGvZAdlWpy27JChgWTU0DHBKNsFNtegLS",
+        "https://static.wixstatic.com/media/bddd1c_a90910a2ab8644838fa0183dd78e6a33~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bddd1c_a90910a2ab8644838fa0183dd78e6a33~mv2.jpg"
+      ],
+      "rating": 5.2,
+      "productionYear": "2020",
+      "cast": [
+        "Anders Baasmo",
+        "Otto Jespersen",
+        "Sven Nordin"
+      ],
+      "director": "Hallvard Braein",
+      "category": [
+        "action",
+        "comedy"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/SCt0zdfSST0?si=C2acP_QfR76LXGIG",
+        "https://www.youtube.com/embed/ViUFEs5cyhY?si=1qs_8DXjsrVrccgo"
+      ],
+      "length": 100
+    },
+    {
+      "id": "8b6a",
+      "name": "Kung Fu Panda",
+      "description": "To everyone's surprise, including his own, Po, an overweight, clumsy panda, is chosen as protector of the Valley of Peace. His suitability will soon be tested as the valley's arch-enemy is on his way.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/M/MV5BODJkZTZhMWItMDI3Yy00ZWZlLTk4NjQtOTI1ZjU5NjBjZTVjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+        "https://w0.peakpx.com/wallpaper/742/923/HD-wallpaper-kung-fu-panda-1.jpg"
+      ],
+      "rating": 7.6,
+      "productionYear": "2008",
+      "cast": [
+        "Angelina Jolie",
+        "Jack Black"
+      ],
+      "director": "Mark Osborne",
+      "category": [
+        "action",
+        "adventure",
+        "animated"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/PXi3Mv6KMzY?si=IiYE_bn-JPUMMHki",
+        "https://www.youtube.com/embed/siLm9q4WIjI?si=plx_XWoNIA7A4mpp"
+      ],
+      "length": 92
+    },
+    {
+      "id": "082b",
+      "name": "Holiday Road",
+      "description": "Nine strangers, stranded at an airport during the holidays, unite for a Christmas road trip to Denver. Misadventures lead to unexpected bonds and heartfelt conversations.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/M/MV5BMTQxYjE5NmEtMDBhNi00MWIyLTg5YzAtYTc4NDA1NWVjZDZhXkEyXkFqcGdeQXVyMTU4MzQzNDkx._V1_FMjpg_UX1000_.jpg",
+        "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p25790919_v_h9_aa.jpg"
+      ],
+      "rating": 7.2,
+      "productionYear": "2023",
+      "cast": [
+        "Princess Davis",
+        "Sara Canning",
+        "Warren Christie"
+      ],
+      "director": " Martin Wood",
+      "category": [
+        "drama",
+        "romance"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/6oH4h0IXa1I?si=0z7ONNJ-JwMmXDN0"
+      ],
+      "length": 84
+    },
+    {
+      "id": "017a",
+      "name": "The Thundermans Return",
+      "description": "It centers on the family as they begin a new era of superhero crimefighting. When one save goes wrong, the Thundermans are sent back to Hiddenville.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/M/MV5BZjA3ODhlNDUtMjg0MS00MDE3LWFlOGUtZjk5Yzk2OTQwZDhiXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_.jpg",
+        "https://m.media-amazon.com/images/M/MV5BY2M4NzZkNzEtYTdjOS00NGFlLWI0OTItOWNiNDBlNWI3ZTNjXkEyXkFqcGdeQXVyMTUzMjM4OTMx._V1_.jpg"
+      ],
+      "rating": 5.1,
+      "productionYear": "2024",
+      "cast": [
+        "Addison Riecke",
+        "Jack Griffo",
+        "Kira Kosarin"
+      ],
+      "director": "Trevor Kirschner",
+      "category": [
+        "action",
+        "comedy",
+        "crime"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/gYA5WOFhd-Y?si=7hgqZgBBxj6BGCPt",
+        "https://www.youtube.com/embed/uc8eAjwSesI?si=3lfLXDGwp39lThYT"
+      ],
+      "length": 70
+    },
+    {
+      "id": "6514",
+      "name": "Harry Potter and the Philosopher's Stone",
+      "description": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
+      "imageUrl": [
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQttbZNVGzKnwLBGXrKBkt0VY2J2DubjnH_lSQrJCzdSf5fe4OK8yUM27EYhteFc68Ii7Xr9g",
+        "https://images3.alphacoders.com/120/1202555.jpg"
+      ],
+      "rating": 7.6,
+      "productionYear": "2001",
+      "cast": [
+        "Daniel Radcliffe",
+        "Emma Watson",
+        "Rupert Grint"
+      ],
+      "director": "Chris Columbus",
+      "category": [
+        "adventure",
+        "family",
+        "fantasy"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/mNgwNXKBEW0?si=Xnt8BvwXHbzQnHm6",
+        "https://www.youtube.com/embed/VyHV0BRtdxo?si=bvNbrux8NIZ5ifTV"
+      ],
+      "length": 152
+    },
+    {
+      "id": "e613",
+      "name": "Joker",
+      "description": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        "https://wallpapers.com/images/hd/car-on-fire-joker-2019-chj1cyk2g3eq439b.jpg"
+      ],
+      "rating": 8.4,
+      "productionYear": "2019",
+      "cast": [
+        "Joaquin Phoenix",
+        "Robert De Niro",
+        "Zazie Beetz"
+      ],
+      "director": "Todd Phillips",
+      "category": [
+        "crime",
+        "drama",
+        "thriller"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/t433PEQGErc?si=YBdnt8GzBE3as960",
+        "https://www.youtube.com/embed/zAGVQLHvwOY?si=GcFvAlTduGJ0Khn9"
+      ],
+      "length": 122
+    },
+    {
+      "id": "46cf",
+      "name": "Focus",
+      "description": "In the midst of veteran con man Nicky's latest scheme, a woman from his past - now an accomplished femme fatale - shows up and throws his plans for a loop.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/M/MV5BMTUwODg2OTA4OF5BMl5BanBnXkFtZTgwOTE5MTE4MzE@._V1_FMjpg_UX1000_.jpg",
+        "https://c4.wallpaperflare.com/wallpaper/843/675/689/movies-hollywood-movies-wallpaper-preview.jpg"
+      ],
+      "rating": 6.6,
+      "productionYear": "2015",
+      "cast": [
+        "Margot Robbie",
+        "Rodrigo Santoro",
+        "Will Smith"
+      ],
+      "director": "Glenn Ficarra",
+      "category": [
+        "comedy",
+        "crime",
+        "drama"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/MxCRgtdAuBo?si=tCdOZn5TPw3N5k8b"
+      ],
+      "length": 105
+    }
+  ]
+}

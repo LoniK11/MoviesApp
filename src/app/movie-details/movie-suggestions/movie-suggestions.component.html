@@ -1,0 +1,8 @@
+<div class="container">
+    <h3>Suggested Movies</h3>
+    <div class="second-container">
+        <div class="scroll-div"[ngStyle]="{'width':getLength()}">
+            <app-movie *ngFor="let movie of movieArray" [movie]="movie"></app-movie>
+        </div>
+    </div>
+</div>

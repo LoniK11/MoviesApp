@@ -1,0 +1,8 @@
+<div class="container poppins-light">
+    <h3>Genre</h3>
+    <ul [ngStyle]="{'height': countCategories()}">
+        <li *ngFor="let category of categoryList, let i = index" (click)="getCategory($event)">{{ category | titlecase }}</li>
+        <br>
+        <li (click)="navigateToAddMovie()">Add new Movie</li>
+    </ul>
+</div>

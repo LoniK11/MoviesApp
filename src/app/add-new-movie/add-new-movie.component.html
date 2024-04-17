@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="form-cnt">
+        <form [formGroup]="movieForm" (ngSubmit)="submitForm()">
+            <h2>Add new Movie</h2><br><br>
+            <label for="name">Movie Name</label><br>
+            <input type="text" id="name" formControlName="name"><br>
+            <span *ngIf="!movieForm.get('name')?.valid && movieForm.get('name')?.touched">Type your movie name with 3 or more characters</span><br><br>
+
+            <label for="description">Movie Description</label>
+            <textarea id="description" formControlName="description"></textarea><br>
+            <span *ngIf="!movieForm.get('description')?.valid && movieForm.get('description')?.touched">Type your movie description with 50 or more characters</span><br><br>
+
+            <label for="categories">Categories</label>
+            <span *ngIf="movieForm.get('category')?.invalid">Select 2 - 5 categories</span><br>
+            <select #categoryRef class="categories" id="categories" class="actors">
+                <option *ngFor="let category of categoryList" [value]="category">{{ category | titlecase }}</option>
+            </select>
+            <button type="button" class="actors" (click)="insertCategory(categoryRef.value)">Add Category</button>
+            <ol>
+                <li *ngFor="let category of getCategoryList(),let i = index">
+                    {{ category.value | titlecase }}<button type="button" (click)="removeCategory(category.value,i)">Remove</button>
+                </li>
+            </ol><br>
+
+            <div class="formGroup">
+                <div class="rating-length-year">
+                    <label for="year">Year</label>
+                    <select class="" type="number" id="year" min="1980" max="2024" step="1" formControlName="productionYear">
+                        <option *ngFor="let year of yearArray" [value]="year">{{ year }}</option>
+                    </select>
+                </div>
+                <div class="rating-length-year">
+                    <label for="length">Length</label>
+                    <input type="number" id="length" formControlName="length">
+                </div>
+                <div class="rating-length-year">
+                    <label for="rating">Rating</label>
+                    <input type="number" id="rating" min="0" max="10" step="0.1" formControlName="rating">
+                </div>
+            </div>
+            
+            <div class="spans">
+                <span *ngIf="!movieForm.get('productionYear')?.valid && movieForm.get('productionYear')?.touched">Select a year</span>
+            </div>
+            <div class="spans">
+                <span *ngIf="!movieForm.get('length')?.valid && movieForm.get('length')?.touched">Length: 50 - 180 mins</span>
+            </div>
+            <div class="spans" style="margin-right: 0;">
+                <span *ngIf="!movieForm.get('rating')?.valid && movieForm.get('rating')?.touched">Rating: 0 - 10 (0.1 step)</span>
+            </div>
+            <br>
+            <br>
+
+            <label for="imageUrl" >Enter Movie Image Url</label>
+            <input type="url" id="imageUrl" formControlName="imageUrl"><br>
+            <span *ngIf="!movieForm.get('imageUrl')?.valid && movieForm.get('imageUrl')?.touched">Enter an URL as movie image</span><br><br>
+
+            <label for="backgroundImageUrl">Enter Background Image Url</label>
+            <input type="url" id="backgroundImageUrl" formControlName="backgroundImageUrl"><br>
+            <span *ngIf="!movieForm.get('backgroundImageUrl')?.valid && movieForm.get('backgroundImageUrl')?.touched">Enter an URL as movie background image</span><br><br>
+
+            <label for="actors">Actors</label>
+            <input #actorRef type="text" id="actors" class="actors" >
+            <button type="button" class="actors" (click)="insertActor(actorRef.value)">Add Actor</button>
+            <br><span *ngIf="!movieForm.get('cast')?.valid">Enter between 2 and 5 Actor names that play in the movie(Actor name min.Length = 7)</span><br>
+            <ol>
+                <li *ngFor="let actor of getMovieFormCast()?.controls, let i = index">
+                    {{ actor.value }}<button type="button" (click)="removeActor(i)">Remove</button>
+                </li>
+            </ol><br>
+
+            <label for="director">Director</label>
+            <input type="text" id="director" formControlName="director"><br>
+            <span *ngIf="!movieForm.get('director')?.valid && movieForm.get('director')?.touched">Enter the movie director name</span><br><br>
+
+            <label for="clips">Clips</label>
+            <input #clipRef type="url" id="clips" class="actors">
+            <button type="button" class="actors" (click)="insertClip(clipRef.value)">Add Movie Clip</button>
+            <br><span *ngIf="!movieForm.get('clips')?.valid">Enter clip URLs for the movie (1-5)</span><br>
+            <ol>
+                <li *ngFor="let clip of getMovieFormClips()?.controls, let i = index">
+                    {{ clip.value }}<button type="button" (click)="removeClip(i)">Remove</button>
+                </li>
+            </ol>
+
+            <button [disabled]="!movieForm.get('category')?.valid" type="submit">Submit</button>
+        </form>
+    </div>
+</div>

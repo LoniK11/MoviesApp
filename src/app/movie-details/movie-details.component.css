@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+div.container {
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: rgb(50,50,50);
+    padding: 20px 10px 0 10px;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+div.container div.second-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* background-color: red; */
+}
+
+div.container div.second-container div.back-scroll {
+    width: 100%;
+    height: 100%;
+    /* background-color: beige;  */
+    /* background-color: transparent; */
+    margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+div.container div.second-container div.back-scroll div.inline {
+    display: inline-flex;
+    height: 100%;
+    vertical-align: top;
+}
+
+div.container div.second-container div.back-scroll div.left {
+    width: 20%;
+    /* background-color: aqua; */
+    position: sticky;
+    height: 55vh;
+    top: 0;
+    border-radius: 10px;
+}
+
+div.container div.second-container div.back-scroll div.left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+div.container div.second-container div.back-scroll div.background {
+    width: 100%;
+    /* background-color: red;  */
+    height: calc(100%); /*Div height*/
+    margin-top: -55vh;
+}
+
+div.container div.second-container div.back-scroll div.background div.details {
+    width: 80%;
+    margin-left: 20%;
+    height: calc(100%);
+    /* background: blue; */
+    padding-left: 20px;
+    overflow-y: auto;
+    padding-bottom: 0;
+}
+
+/* div.container div.second-container div.back-scroll div.background div.details div.details-container {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid white; 
+    background-color: darkblue;
+    border-radius: 10px;
+    padding-bottom: 0;
+    overflow-y: auto;
+} */
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-delete {
+    display: inline-block;
+    align-items: center;
+    width: 80%;
+    vertical-align: top;
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-delete:nth-child(2){
+    width: 20%;
+    height: 38px;
+}
+
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-delete button{
+    width: 100px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+    margin-left: calc(50% - 50px);
+}
+
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-delete h2 {
+    color: white;
+    font-size: 34px;
+    line-height: 38px;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.bi-star-fill {
+    color: gold;
+    font-size: 14px;
+    line-height: 16px;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+div.container div.second-container div.back-scroll div.background div.details ul {
+    list-style: none;
+    width: 170px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+div.container div.second-container div.back-scroll div.background div.details ul li {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    color: rgb(200, 200, 200);
+    background-color: rgb(75,75,75);
+    border-radius: 5px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 2px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+div.container div.second-container div.back-scroll div.background div.details ul li:last-child {
+    margin-right: 0px;
+}
+
+div.container div.second-container div.back-scroll div.background div.details p {
+    color: white;
+    font-weight: 420;
+    margin-top: 17.5px;
+}
+
+div.container div.second-container div.back-scroll div.background div.details p.category {
+    color: rgb(200, 200, 200);
+    margin-top: 12.5px;
+}
+
+div.container div.second-container div.back-scroll div.background div.details p.description {
+    width: 80%;
+    /* background-color: black; */
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-div {
+    width: 80%;
+    height: 60px;
+    background-color: rgb(50,50,50);
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-div table {
+    width: 100%;
+    /* background: red; */
+    background-color: transparent;
+    height: 60px;
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-div table tr {
+    width: 100%;
+    height: 50%;
+    /* background-color: pink; */
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-div table tr td {
+    vertical-align: top;
+    font-weight: 400;
+}
+
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-div table tr td:nth-child(1) {
+    width: 16%;
+    /* background-color: blue; */
+    color: rgb(200, 200, 200);
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.inline-div table tr td:nth-child(2) {
+    width: 84%;
+    /* background-color: cadetblue; */
+    color: white;
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.clips {
+    width: 100%;
+    height: 298px;
+    /* background-color: black; */
+    margin-top: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0;
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.clips h3{
+    line-height: 27px;
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+    padding: 0;
+}
+
+
+div.container div.second-container div.back-scroll div.background div.details div.clips div.video-container {
+    /* background-color: red; */
+    padding: 15px 0 0 0;
+    height: 255px;
+    margin-bottom: 0;
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.clips div.video-container div.video {
+    width: 405px;
+    height: 240px;
+    /* background-color: aliceblue; */
+    display: inline-block;
+    margin-right: 14px;
+    border-radius: 10px;
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.clips div.video-container div.video:last-child {
+    margin-right: 0;
+}
+
+div.container div.second-container div.back-scroll div.background div.details div.clips div.video-container div.video iframe {
+    width: 405px;
+    height:240px;
+    border: none;
+    border-radius: 10px;
+}
+
+div.container div.second-container div.bottom {
+    width: 100%;
+    height: 385px;
+    /* background-color: yellow; */
+}
+
+div.container div.second-container div.bottom h3 {
+    font-size: 30px;
+    line-height: 32px;
+}
+
+app-trend-movies {
+    margin-top: 10px;
+}

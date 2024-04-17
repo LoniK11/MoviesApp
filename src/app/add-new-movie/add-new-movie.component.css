@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+div.container {
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    background-color: rgb(50,50,50);
+    padding: 50px 5%;
+}
+
+div.container div.form-cnt{
+    width: 100%;
+    padding: 30px 150px 50px 150px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+div.container div.form-cnt form input,textarea,select{
+    padding: 0 5px;
+}
+
+div.container div.form-cnt input {
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+div.container div.form-cnt form textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+div.container div.form-cnt form div.formGroup {
+    width: 100%;
+}
+
+
+div.container div.form-cnt form div.formGroup div.rating-length-year {
+    width: 32%;
+    display: inline-block;
+    margin-right: 2%;
+    margin-left: 0;
+}
+
+div.container div.form-cnt form div.formGroup div.rating-length-year:last-child {
+    margin-right: 0;
+}
+
+
+div.container div.form-cnt form div.formGroup div.rating-length-year input,label,select,option {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+
+div.container div.form-cnt form select {
+    border: 2px solid white;
+}
+
+
+div.container div.form-cnt form .actors {
+    width: 70%;
+    display: inline-block;
+}
+
+div.container div.form-cnt form button.actors {
+    width: 27.5%;
+    margin-left: 2.5%;
+}
+
+div.container div.form-cnt form ol {
+    list-style: none;
+}
+
+span {
+    color: red;
+}
+
+div.container div.form-cnt form ol li {
+    height: 30px;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+
+div.container div.form-cnt form ol li button {
+    width: 100px;
+    height: 20px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+div.container div.form-cnt form select.categories {
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    background-color: black;
+}
+
+div.container div.form-cnt form div.spans{
+    width: 32%;
+    margin-right: 2%;
+    display: inline-block;   
+    margin-left: 0;
+}
+
+div.container div.form-cnt form div.spans:last-child{
+   margin-right: 0;  
+}
+
+div.container div.form-cnt form div.spans span {
+    width: 100%;
+    height: 30px;
+}
+
+button[type="submit"] {
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7.5px;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    background-color: lightgray;
+    margin-left: calc(50% - 90px);
+    margin-top: 20px;
+}
+
+div.container div.form-cnt form h2 {
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="second-container" *ngIf="featuredMovie" [ngStyle]="{'background-image':'url(' + imgUrl + ')'}">
+        <div class="left">
+            <h2>{{ featuredMovie.name }}</h2>
+            <p class="year-rating">{{ featuredMovie.productionYear }}</p>
+            <p class="rating year-rating"><i class="bi bi-star-fill"></i>{{ featuredMovie.rating }}</p>
+            <p class="genre">{{ featuredMovie.category | stringifyArray }}</p>
+            <p class="description">{{ featuredMovie.description }}</p>
+            <button (click)="watchFeaturedMovie()"><i class="bi bi-play-circle"></i>Watch now</button>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <app-trend-movies [featuredMovie]="featuredMovie"></app-trend-movies>
+</div>
+

@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="second-container">
+        <div class="profile-pic">
+            <i #profile class="bi bi-person-circle"></i>
+        </div>
+        
+        <br>
+        <form [formGroup]="userForm" (ngSubmit)="false">
+            <div class="edit">
+                <button class="edit-profile" *ngIf="!edit" (click)="clickEdit()">Edit</button>
+                <button class="edit-profile" *ngIf="edit" [disabled]="!userForm.get('password')?.valid" (click)="clickSave()">Save</button>
+            </div>
+            
+            <label for="username">Username</label><br>
+            <input type="text" id="username" formControlName="username" readonly><br>
+
+            <label for="email">Email</label><br>
+            <input type="text" id="email" formControlName="email" readonly><br>
+
+            <label for="password">Password</label><br>
+            <input type="text" id="password" formControlName="password" [readonly]="readonly"><br>
+            <span *ngIf="!userForm.get('password')?.valid && userForm.get('password')?.dirty">Password must contain 8-12 characrers,Uper and Lower case and min 3 numbers</span>
+
+            
+        </form>
+        <button class="logout" (click)="logOut()">Log Out</button>    
+    </div>
+</div>
+
+<div class="save-profile-changes" *ngIf="openSave">
+    <div class="select-option">
+        <div class="top">{{  'Do you want to update your password from \'' + currentUser.password + '\' to \'' + userForm.get('password')?.value + '\' ?'}}</div>
+        <div class="bottom">
+            <button class="option" (click)="saveUserUpdatedPassword()">Yes</button>
+            <button class="option" (click)="doNotSaveUserUpdatedPassword()">No</button>
+        </div>
+    </div>
+</div>
+
+<div class="blur" *ngIf="edit"></div>

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.movie {
+    width: 180px;
+    height: 325px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    /*background-color: blue;*/
+}
+
+div.movie:last-child{
+    margin-right: 0;
+}
+
+div.movie img {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+div.movie p {
+    font-size: 12;
+    font-weight: 600;
+    color: rgb(200, 200, 200);
+    margin: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 180px;
+    transition: 0.3s ease;
+}
+
+div.movie:hover p.hover {
+    color: white;
+}
+
+div.movie p.ratings{
+    font-weight: 400;
+    width: 50px;
+    height: 20px;
+    border: 2px solid transparent;
+    background-color: rgb(75,75,75);
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    border-radius: 5px;
+    margin: 10px;
+    margin-right: 0;
+    padding-right: 5px;
+    transition: 0.3s;
+    color: rgb(200, 200, 200);
+}
+
+.bi-star-fill {
+    color: gold;
+    font-size: 14px;
+    line-height: 16px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: -3px;
+}
+
+div.movie p.year-rating{
+    display: inline-block;
+}
+
+div.movie p.year {
+    width: 50px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: rgb(200, 200, 200);
+    padding: 2px;
+    margin-left: 60px;
+}

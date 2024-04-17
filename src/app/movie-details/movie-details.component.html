@@ -1,0 +1,51 @@
+<div class="container" [hidden]="movieHidden">
+    <div class="second-container" #secondContainer *ngIf="movie">
+        <div class="back-scroll"  #backScroll [ngStyle]="{}">
+            <div class="left inline">
+                <img  *ngIf="movie" [src]="movie.imageUrl[0]" alt="">
+            </div>
+            <div class="background inline" >
+                <div class="details" #backgroundScroll>
+                        <div class="inline-delete" >
+                            <h2 (click)="getCurrentRoute()" *ngIf="movie">{{ movie.name }}</h2>
+                        </div>
+                        <div class="inline-delete" >
+                            <button *ngIf="userCheck" (click)="deleteCurrentMovie()">Delete</button>
+                        </div>
+                        <ul *ngIf="movie"> 
+                            <li><i class="bi bi-star-fill"></i>{{ movie.rating }}</li>
+                            <li>{{ movie.length + 'm' }}</li>
+                            <li>{{ movie.productionYear }}</li>
+                        </ul>
+                        <p class="category" *ngIf="movie">{{ movie.category | stringifyArray }}</p>
+                        <p class="description" *ngIf="movie">{{ movie.description }}</p>
+                        <div class="inline-div">
+                            <table *ngIf="movie">
+                                <tr>
+                                    <td>Starring</td>
+                                    <td>{{ movie.cast | stringifyArray }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Directed by</td>
+                                    <td>{{ movie.director }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div class="clips">
+                            <h3>Trailers and Clips</h3>
+                            <div class="video-container" *ngIf="movie" [ngStyle]="{'width':'calc((14px * (' + getClipNumber()  +' - 1)) + (405px * ' + getClipNumber() + '))  '}">
+                                <div class="video" *ngFor="let clip of movie.clips,let i = index">
+                                    <iframe muted [src]="clip" allow="encrypted-media ;accelerometer ;gyroscope; clipboard-write; autoplay;" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="bottom">
+                <app-movie-suggestions></app-movie-suggestions>
+            </div>
+        </div>
+    </div>
+</div>

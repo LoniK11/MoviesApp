@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    /* word-break: break-all; */
+}
+
+/*div.container {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+div.container div.section {
+
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0,0.5);
+    background-position: center;
+    background-size: 100vw 100vh;
+    
+    background-blend-mode: darken;
+}*/
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar width */
+}    
+/*
+
+div.container div.section div.movie-details {
+    width: 70%;
+    height: 70vh;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div.movie-details {
+    position: relative;
+}
+
+i {
+    color: black;
+}*/
+
+div.container {
+    width: 100%;
+    /*height: 1700px*/
+    height: 1300px;
+    background-color: rgb(50, 50, 50);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px;
+}
+
+div.container div.second-container {
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    border-radius: 30px;
+    background-position: center;
+    background-size:100% 450px;
+}
+
+div.container div.second-container div {
+    display: inline-block;
+    position: absolute;
+    width: calc(50% - 10px);
+    height: 450px;
+    opacity: 1;
+}
+
+div.container div.second-container div.left {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0.5));
+    color: white;
+    padding: 10px 70px 10px 70px;
+}
+
+div.container div.second-container div.right {
+    background: linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.35));
+    left: 50%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+div.container div.second-container div.left h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+div.container div.second-container div.left p.year-rating {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+div.container div.second-container div.left p {
+    font-size: 16px;
+    margin: 10px 5px;
+    font-weight: 300;
+    color: #e3e3e3;
+    text-align: left;
+}
+
+div.container div.second-container div.left p.rating {
+    font-weight: 400;
+    width: 50px;
+    height: 20px;
+    border: 2px solid transparent;
+    background-color: rgb(50,50,50);
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    border-radius: 5px;
+    margin-left: 2px;
+    padding-right: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+div.container div.second-container div.left p.rating:hover {
+    background-color: rgb(75,75,75);
+}
+
+div.container div.second-container div.left button {
+    width: 130px;
+    height: 40px;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 11px 0 11px 25px;
+    text-align: center;
+    font-weight: 500;
+    border: none;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+div.container div.second-container div.left button:hover {
+    background-color: rgb(255, 75, 75);
+}
+
+i.bi-play-circle {
+    font-size: 18px;
+    padding-right: 10px;
+    position: absolute;
+    left: 87.5px;
+}
+
+.bi-star-fill {
+    padding-left: 3px;
+    color: gold;
+    float: left;
+}
+
+div.container div.trend-movie {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    margin-top: 50px;
+}

@@ -1,0 +1,5 @@
+<div class="container">
+    <p>{{ 'You searched for: ' + searchedData }}</p>
+    <br>
+    <app-movie *ngFor="let movie of movieArray" [movie]="movie" ></app-movie>
+</div>

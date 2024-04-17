@@ -1,0 +1,16 @@
+<div class="container">
+    <h3>Weekly Trending Movies</h3>
+    <div class="second-container">
+        <div class="scroll-div"[ngStyle]="{'width': getLength(trendingMovieArray)}">
+            <app-movie *ngFor="let movie of trendingMovieArray" [movie]="movie"></app-movie>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h3>Top Rated Movies</h3>
+    <div class="second-container">
+        <div class="scroll-div"[ngStyle]="{'width': getLength(topRatedMovieArray)}">
+            <app-movie *ngFor="let movie of topRatedMovieArray" [movie]="movie"></app-movie>
+        </div>
+    </div>
+</div>

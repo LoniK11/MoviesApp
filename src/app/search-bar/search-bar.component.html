@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="left" (click)="getBackToMain()"></div>
+    <div class="right">
+        <input type="text" class="search-bar" placeholder="Search any movies..." (input)="filterMovieArrayBySearch()" [(ngModel)]="searchedData">
+        <button type="button" [disabled]="searchedData.length < 3" class="search-bar bi bi-search" (click)="clickSearchButton()"></button>
+        <div class="search-bar" (click)="clickProfile()"><i #profile class="bi bi-person-circle"></i></div>
+    </div>
+</div>
+<div class="search-results" *ngIf="searchedData.length >= 3" [hidden]="hidden">
+    <div class="scroll" [ngStyle]="{'height':'calc(30px * ' + searchedMovieArray.length + ')'}">
+        <ul >
+            <li *ngFor="let i of searchedMovieArray" (click)="goToSearchedMovie(i.name)">{{ i.name }}</li>
+        </ul>
+    </div> 
+</div>
