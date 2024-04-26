@@ -2,8 +2,7 @@ import { Component, ElementRef, ViewChild, HostListener, OnInit, OnDestroy, Afte
 import { SafeResourceUrl ,DomSanitizer } from '@angular/platform-browser';
 import { MovieModel } from '../Models/movie.model';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AuthServiceService } from '../Services/auth-service.service';
-import { Subscribable, Subscription, map } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { ApiService } from '../Services/api.service';
 import { User } from '../Models/user.model';
 

@@ -22,7 +22,7 @@ const routes: Routes = [
   {path:'sign-up',component:SignUpComponent},
   {path:'sign-in',component:SignInComponent},
   {path:'profile/:id',component:ProfileComponent,canActivate:[LogInAuthService]},
-  {path:'**',redirectTo:'', pathMatch:'full'}
+  {path:'**',redirectTo:''}
 ];
 
 @NgModule({

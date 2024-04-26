@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Router,RouterStateSnapshot,ActivatedRouteSnapshot,CanActivate, UrlTree } from '@angular/router';
+import { Router,RouterStateSnapshot,ActivatedRouteSnapshot,CanActivate } from '@angular/router';
 
 import { categoryList } from '../Models/categories';
-import { AuthServiceService } from './auth-service.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +9,7 @@ import { AuthServiceService } from './auth-service.service';
 export class AuthGuardMovieCategoryService implements CanActivate{
 
   constructor(
-    private router: Router,
-    private authService: AuthServiceService
+    private router: Router
   ){}
 
   canActivate(

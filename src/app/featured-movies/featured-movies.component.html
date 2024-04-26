@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="second-container" *ngIf="featuredMovie" [ngStyle]="{'background-image':'url(' + imgUrl + ')'}">
+    <div class="second-container scroll-align" *ngIf="featuredMovie" [ngStyle]="{'background-image':'url(' + imgUrl + ')'}">
         <div class="left">
             <h2>{{ featuredMovie.name }}</h2>
             <p class="year-rating">{{ featuredMovie.productionYear }}</p>
@@ -11,6 +11,7 @@
         <div class="right"></div>
     </div>
 
-    <app-trend-movies [featuredMovie]="featuredMovie"></app-trend-movies>
+    <div>
+        <app-trend-movies class="scroll-align" [featuredMovie]="featuredMovie"></app-trend-movies>
+    </div>
 </div>
-

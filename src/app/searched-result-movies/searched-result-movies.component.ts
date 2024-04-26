@@ -26,6 +26,12 @@ export class SearchedResultMoviesComponent implements OnInit,OnDestroy{
         console.log(this.searchedData);
       }
     )
+/* 
+    this.subscription = this.route.params.subscribe(
+      params => {
+        this.searchedData = params['searchedData']
+      }
+    ) */
   }
 
   ngOnDestroy(){

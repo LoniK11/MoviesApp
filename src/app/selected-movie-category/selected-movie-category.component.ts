@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, RouterStateSnapshot } from '@angular/router';
-import { BehaviorSubject, Observable, ObservedValueOf, Subscription } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { MovieModel } from '../Models/movie.model';
 import { ApiService } from '../Services/api.service';
 
@@ -37,6 +37,7 @@ export class SelectedMovieCategoryComponent implements OnInit,OnDestroy{
     this.subscription = this.route.params.subscribe(
       params => {
         const category = params['category'];
+        this.categoryString = 'Selected Category: ' + category.charAt(0).toUpperCase() + category.substring(1,category.length);
         // console.log(category);
 
         this.movieArray = movies.filter(movie => movie.category.includes(category.toLowerCase())) 

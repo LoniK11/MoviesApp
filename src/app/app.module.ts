@@ -11,12 +11,11 @@ import { FeaturedMoviesComponent } from './featured-movies/featured-movies.compo
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { MovieCategoryComponent } from './movie-category/movie-category.component';
 import { TrendMoviesComponent } from './featured-movies/trend-movies/trend-movies.component';
-import { MovieComponent } from './featured-movies/trend-movies/movie/movie.component';
+import { MovieComponent } from './movie/movie.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { MovieSuggestionsComponent } from './movie-details/movie-suggestions/movie-suggestions.component';
 
 import { StringifyArrayPipe } from './Pipes/stringify-array.pipe';
-import { ShowExceptSelectedPipe } from './Pipes/show-except-selected.pipe';
 import { SelectedMovieCategoryComponent } from './selected-movie-category/selected-movie-category.component';
 import { SearchedResultMoviesComponent } from './searched-result-movies/searched-result-movies.component';
 import { AddNewMovieComponent } from './add-new-movie/add-new-movie.component';
@@ -35,7 +34,6 @@ import { ProfileComponent } from './profile/profile.component';
     MovieDetailsComponent,
     MovieSuggestionsComponent,
     StringifyArrayPipe,
-    ShowExceptSelectedPipe,
     SelectedMovieCategoryComponent,
     SearchedResultMoviesComponent,
     AddNewMovieComponent,

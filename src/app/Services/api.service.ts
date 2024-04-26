@@ -49,4 +49,7 @@ export class ApiService {
     this.userSubject.next(user)
   }
 
+  deleteCurrentUser(user: User){
+    return this.http.delete(`${this.apiUrl}/users/${user.id}`);
+  }
 }

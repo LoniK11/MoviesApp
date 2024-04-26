@@ -68,12 +68,18 @@ div.container button.logout {
     font-size: 16px;
     color: white;
     background-color: red;
-    margin-left: calc(50% - 60px);
+    margin-left: calc(40% - 60px);
     border: none;
     border-radius: 15px;
     position: relative;
     z-index: 5;
+    margin-right: calc(10% - 60px);;
     /* margin-top: -50px; */
+}
+
+div.container button.logout:last-child {
+    margin-right: calc(40% - 60px);
+    margin-left: calc(10% - 60px);
 }
 
 div.container div.second-container div.profile-pic i {
@@ -155,7 +161,7 @@ div.save-profile-changes div.select-option div.bottom {
 }
 
 div.save-profile-changes div.select-option div.bottom button.option {
-    height: 40px;
+    height: 35px;
     width: 70px;
     left: 5%;
     position: absolute;

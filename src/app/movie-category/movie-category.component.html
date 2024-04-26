@@ -3,6 +3,6 @@
     <ul [ngStyle]="{'height': countCategories()}">
         <li *ngFor="let category of categoryList, let i = index" (click)="getCategory($event)">{{ category | titlecase }}</li>
         <br>
-        <li (click)="navigateToAddMovie()">Add new Movie</li>
+        <li (click)="navigateToAddMovie()" *ngIf="currentUser.id !== ''">Add new Movie</li>
     </ul>
 </div>

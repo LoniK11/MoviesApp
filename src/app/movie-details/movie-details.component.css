@@ -26,7 +26,7 @@ div.container div.second-container {
 
 div.container div.second-container div.back-scroll {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 80px);
     /* background-color: beige;  */
     /* background-color: transparent; */
     margin-bottom: 0;
@@ -63,6 +63,7 @@ div.container div.second-container div.back-scroll div.background {
     /* background-color: red;  */
     height: calc(100%); /*Div height*/
     margin-top: -55vh;
+    padding-bottom: 0;
 }
 
 div.container div.second-container div.back-scroll div.background div.details {
@@ -73,6 +74,7 @@ div.container div.second-container div.back-scroll div.background div.details {
     padding-left: 20px;
     overflow-y: auto;
     padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* div.container div.second-container div.back-scroll div.background div.details div.details-container {
@@ -210,8 +212,9 @@ div.container div.second-container div.back-scroll div.background div.details di
 div.container div.second-container div.back-scroll div.background div.details div.clips {
     width: 100%;
     height: 298px;
+    margin-top: 30px;
     /* background-color: black; */
-    margin-top: 10px;
+    /* margin-top: 10px; */
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 0;

@@ -22,18 +22,14 @@ export class TrendMoviesComponent implements OnInit{
     this.api.getAllMoviesTwo().subscribe(
       movies => {
         const movieArray = movies.filter(movie => JSON.stringify(movie) !== JSON.stringify(this.featuredMovie))
-        // console.log(movieArray)
+
         console.log(this.featuredMovie);
         console.log(movieArray);
         
         this.topRatedMovieArray = this.getTopRatedMovies(movieArray);
         
         this.trendingMovieArray = this.generateFeaturedMovie(0,movieArray)
-        /* 
-        // console.log(this.generateFeaturedMovie(0,this.topRatedMovieArray));
         
-        console.log(this.generateFeaturedMovie(0,movieArray));
-        this.trendingMovieArray = this.generateFeaturedMovie(0,movies) */
       }
     ) 
   }
@@ -50,17 +46,7 @@ export class TrendMoviesComponent implements OnInit{
   }
 
   getTopRatedMovies(movieArray: MovieModel[]){
-    /* for(let i = 0; i < movieArray.length; i++){
-      for(let j = i + 1; j < movieArray.length; j++){
-        if(movieArray[i].rating < movieArray[j].rating){
-          let temp = movieArray[i].rating;
-          movieArray[i].rating = movieArray[j].rating;
-          movieArray[j].rating = temp;
-        }
-      } 
-      console.log(movieArray[i].rating)
-    } */
-    const returnedArray = movieArray.sort((a,b) => b.rating - a.rating).slice(0,5);
+    const returnedArray = movieArray.sort((a,b) => b.rating - a.rating).slice(0,8);
 
     for(let i of returnedArray){
       console.log('Name: ' + i.name + ' | Rating: ' + i.rating )
@@ -70,9 +56,6 @@ export class TrendMoviesComponent implements OnInit{
   }
 
   generateFeaturedMovie(min: number, movieArray: MovieModel[]){
-    
-    // console.log(Math.floor(Math.random() * max));
-
     let tempMovieArray = movieArray;
     let returnArray:MovieModel[] = [];
    
@@ -80,8 +63,6 @@ export class TrendMoviesComponent implements OnInit{
       let randomIndex = Math.floor(Math.random() * tempMovieArray.length);
       returnArray.push(tempMovieArray[randomIndex]);
 
-      // Remove the selected movie from tempMovieArray
-      //splice method modifies the selected array directly
       tempMovieArray = tempMovieArray.filter(movie => JSON.stringify(movie) !== JSON.stringify(tempMovieArray[randomIndex]))
     }
     

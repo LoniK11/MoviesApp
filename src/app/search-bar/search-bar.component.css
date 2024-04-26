@@ -126,6 +126,7 @@ div.container div.right div.search-bar {
     align-items: start;
     padding: 0;
     position: absolute;
+    cursor: pointer;
 }
 
 div.container div.right div.search-bar i {

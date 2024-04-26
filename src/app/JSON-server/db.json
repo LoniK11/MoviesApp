@@ -1,22 +1,10 @@
 {
   "users": [
     {
-      "id": "eb52",
-      "username": "Loni_K11",
-      "email": "valonkulici11@gmail.com",
-      "password": "Valon12345"
-    },
-    {
-      "id": "2be1",
-      "username": "Ghost123",
-      "email": "ghost123@gmail.com",
-      "password": "Ghost123456"
-    },
-    {
-      "id": "46f7",
+      "id": "f350",
       "username": "Valon123",
       "email": "valonkulici11@gmail.com",
-      "password": "Abcd1234"
+      "password": "Valon123"
     }
   ],
   "movies": [
@@ -238,7 +226,7 @@
       "description": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
       "imageUrl": [
         "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
-        "https://wallpapers.com/images/hd/car-on-fire-joker-2019-chj1cyk2g3eq439b.jpg"
+        "https://i.ytimg.com/vi/skdm_C_8daQ/maxresdefault.jpg"
       ],
       "rating": 8.4,
       "productionYear": "2019",
@@ -284,6 +272,31 @@
         "https://www.youtube.com/embed/MxCRgtdAuBo?si=tCdOZn5TPw3N5k8b"
       ],
       "length": 105
+    },
+    {
+      "id": "06d4",
+      "name": "Oppenheimer",
+      "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+      "imageUrl": [
+        "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg",
+        "https://magazine.luxus-plus.com/wp-content/uploads/2023/09/1200x680_sc_oppenheimer.jpeg"
+      ],
+      "rating": 8.3,
+      "productionYear": "2023",
+      "cast": [
+        "Cillian Murphy",
+        "Kai Bird",
+        "Martin Sherwin"
+      ],
+      "director": "Christopher Nolan",
+      "category": [
+        "drama",
+        "history"
+      ],
+      "clips": [
+        "https://www.youtube.com/embed/uYPbbksJxIg?si=PTcGTVFGgjrwXLkW"
+      ],
+      "length": 180
     }
   ]
 }

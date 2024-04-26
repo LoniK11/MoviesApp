@@ -1,6 +1,5 @@
 import { Injectable, OnInit } from '@angular/core';
 import { ActivatedRouteSnapshot,RouterStateSnapshot, Router, CanActivate } from '@angular/router';
-import { AuthServiceService } from './auth-service.service';
 import { MovieModel } from '../Models/movie.model';
 import { ApiService } from './api.service';
 

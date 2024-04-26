@@ -19,7 +19,7 @@ export class MovieComponent {
     // console.log(this.movie)
     const formattedMovieName = this.movie.name.replace(/\s+/g, '-');
 
-    this.router.navigate(['/movie', this.movie.name.replace(/\s+/g, '-')]);
+    this.router.navigate(['/movie', formattedMovieName]);
   }
 
 }

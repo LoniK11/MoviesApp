@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { categoryList } from '../Models/categories';
+import { Subscription } from 'rxjs';
+import { ApiService } from '../Services/api.service';
+import { User } from '../Models/user.model';
 
 @Component({
   selector: 'app-movie-category',
@@ -9,13 +12,27 @@ import { categoryList } from '../Models/categories';
 })
 export class MovieCategoryComponent {
 
+  categoryList:string[] = categoryList;
+  selectedCategory:string = '';
+  private subscription!:Subscription;
+  currentUser!:User
+
   constructor(
     private router: Router,
+    private api: ApiService
   ){}
 
-  categoryList:string[] = categoryList;
+  ngOnInit(){
+    this.subscription = this.api.user$.subscribe(
+      user => {
+        this.currentUser = user;
+      }
+    )
+  }
 
-  selectedCategory:string = '';
+  ngOnDestroy(){
+    this.subscription.unsubscribe
+  }
 
   countCategories(){
     let count = 0;

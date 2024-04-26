@@ -1,9 +1,7 @@
-import { ViewportScroller } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { MovieModel } from '../Models/movie.model';
 import { Router } from '@angular/router';
 import { ApiService } from '../Services/api.service';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-featured-movies',

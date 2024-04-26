@@ -21,7 +21,6 @@ export class ProfileComponent implements OnInit,OnDestroy{
 
   constructor(
     private router:Router,
-    private route: ActivatedRoute,
     private api:ApiService
   ){}
 
@@ -106,17 +105,12 @@ export class ProfileComponent implements OnInit,OnDestroy{
   }
 
   saveUserUpdatedPassword(){
-    // console.log(this.userForm.value)
-
     const updatedUser:User = {
       id: this.userForm.get('id')?.value,
       username: this.userForm.get('username')?.value,
       email: this.userForm.get('email')?.value,
       password: this.userForm.get('password')?.value
     }
-
-    // this.api.getCurrentUser(updatedUser)
-    // this.currentUser = updatedUser;
 
     console.log(JSON.stringify(this.userForm.value) === JSON.stringify(updatedUser))
 
@@ -135,9 +129,20 @@ export class ProfileComponent implements OnInit,OnDestroy{
   doNotSaveUserUpdatedPassword(){
     this.getUserFromUserArray();
     this.closeSaveOptions();
-    console.log(this.currentUser);
-    
+    console.log(this.currentUser); 
   }
 
+  deleteUser(){
+    this.api.deleteCurrentUser(this.userForm.value).subscribe(
+      success => {
+        alert('User deleted successfully!');
+        this.api.getCurrentUser({id:'',username:'',email:'',password:''})
+        this.router.navigate(['']);
+      },
+      error => {
+        alert('Failed to delete user' + this.userForm.get('username')?.value);
+      }
+    )
+  }
 
 }

@@ -93,12 +93,12 @@ export class AddNewMovieComponent implements OnInit{
 
   checkForDuplicateMovies(movie: MovieModel,array: MovieModel[]){
     if (array.length === 0) {
-      return true; // Return true if array is empty
+      return true;
     }
 
     for(let m of array) {
       if (m.name === movie.name && m.productionYear === movie.productionYear) {
-        return false; // Return false if duplicate found
+        return false;
       }
     }
 

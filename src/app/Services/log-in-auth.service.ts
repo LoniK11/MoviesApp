@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, Router } from '@angular/router';
+import { CanActivate,ActivatedRouteSnapshot,RouterStateSnapshot, Router } from '@angular/router';
 import { Subscription, take } from 'rxjs';
 import { User } from '../Models/user.model';
 import { ApiService } from './api.service';
@@ -18,7 +18,10 @@ export class LogInAuthService implements CanActivate{
     private router: Router
   ){}
 
-  async canActivate(){
+  async canActivate(
+    next:ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ){
 
     this.user = await this.api.user$.pipe(take(1)).toPromise() as any;
     this.userArray = await this.api.getAllUsers().toPromise() as User[];    

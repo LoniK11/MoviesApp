@@ -1,19 +1,17 @@
 import { Injectable } from '@angular/core';
 import { MovieModel } from '../Models/movie.model';
-import { AuthServiceService } from './auth-service.service';
-import { Router,ActivatedRouteSnapshot,RouterStateSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot, Router,RouterStateSnapshot } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthGuardSearchedDataService {
   constructor(
-    private authService: AuthServiceService,
     private router: Router
   ){}
 
   canActivate(
-    next: ActivatedRouteSnapshot,
+    next:ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ){
 
@@ -33,21 +31,7 @@ export class AuthGuardSearchedDataService {
       this.router.navigate(['/'])
       return false;
     }
-    
-
-    /* for(let movie of movieModelArray){
-      currentURL = state.url.slice(7,url.length).replace(/-/g,' ')
-      if(movie.name === currentURL){
-        found = true;
-        movie1 = movie;
-        // console.log(movie1.name.replace(/\s+/g, '-'))
-        break;
-      }
-      else{
-        found = false;
-      }
-    }
- */
+   
   }
 
 }
